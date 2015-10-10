@@ -3,16 +3,18 @@
   "theme": "syntax",
   "version": "0.1.0",
   "description": "Based on the Tomorrow theme configured to discriminate more kinds of syntax elements.",
-  "keywords": [
-    "syntax",
-    "theme"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bholt/atom-a-better-tomorrow"
-  }
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  }
+  },
+  "readme": "# A Better Tomorrow\n\nAn atom theme for a better tomorrow (it's based on Tomorrow, but helps distinguish more kinds of syntax elements).\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/bholt/atom-a-better-tomorrow/issues"
+  },
+  "homepage": "https://github.com/bholt/atom-a-better-tomorrow"
 }
