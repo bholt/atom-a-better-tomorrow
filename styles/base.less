@@ -64,17 +64,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .comment {
   color: @light-gray;
-}
-
-.entity {
-  &.name.type {
-    color: @blue;
-    text-decoration: underline;
-  }
-
-  &.other.inherited-class {
-    color: @green;
-  }
+  font-style: italic;
 }
 
 .keyword {
@@ -217,8 +207,8 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @red;
-    text-decoration: underline;
+    color: @cyan;
+    text-decoration: none;
   }
 
   &.other.attribute-name {
@@ -227,6 +217,15 @@ atom-text-editor .search-results .marker.current-result .region,
     &.id {
       color: @cyan;
     }
+  }
+
+  &.name.type {
+    color: @blue;
+    text-decoration: underline;
+  }
+
+  &.other.inherited-class {
+    color: @green;
   }
 }
 
@@ -262,6 +261,8 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .markup {
+
+
   &.bold {
     color: @orange;
     font-weight: bold;
@@ -284,6 +285,14 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @blue;
   }
 
+  .heading {
+
+    .heading-1 {
+      font-size: 200%;
+    }
+
+  }
+
   &.inserted {
     color: @green;
   }
@@ -303,10 +312,13 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
+
   &.heading {
-    color: @green;
+    color: @blue;
   }
+
 }
+
 
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
